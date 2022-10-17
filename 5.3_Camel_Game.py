@@ -4,15 +4,15 @@ CAMEL GAME
 ----------
 The pseudo-code for how to code this game is in Chapter 5 of the Python Jedi book
 '''
+print("HOW TO PLAY/ HOW TO NOT DIE!")
 print("- You are on a camel running from natives.")
 print("- You will have 6 choices to choose from which will have different responses.")
-print("- How not to die: don't die of dehydration (thirst amount), don't die because your camel is too tired, and don't"
-      "let the native americans catch up!")
+print("- How not to die: keep your canteen full (so you don't die of dehydration), let your camel rest, and stay away"
+      " from the native americans!")
 print("- If you decide you're done, then choose 'Q' and you'll leave the game")
 print("- Also, there is a chance you could find a sanctuary/oasis that will be very helpful."
       " I doubt you can do find one, since they are very rare.")
 done = False
-oasis = False
 milesTraveled = 0
 thirst = 0
 drinkAmount = 10
@@ -69,7 +69,7 @@ while not done:
     else:
         print("Not a choice")
         print("Pick A, B, C, D, E, or Q")
-
+# how close to death (camel's death or your death (by thirst or native americans))
     if 8 > camelTiredness > 5:
         print("Your camel is getting tired")
     elif 8 < camelTiredness:
@@ -85,6 +85,7 @@ while not done:
             print("You are dead")
         elif 6 < drinkAmount > 4:
             print("You are dead")
+# Chance to find an oasis
     oasisChance = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18",
                    "19", "20"]
     comChoice = random.choice(oasisChance)
