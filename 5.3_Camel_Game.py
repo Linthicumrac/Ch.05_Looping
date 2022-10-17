@@ -1,10 +1,16 @@
+import random
 '''
 CAMEL GAME
 ----------
 The pseudo-code for how to code this game is in Chapter 5 of the Python Jedi book
 '''
-print("____INSTRUCTIONS (on multiple lines)____")
-import random
+print("- You are on a camel running from natives.")
+print("- You will have 6 choices to choose from which will have different responses.")
+print("- How not to die: don't die of dehydration (thirst amount), don't die because your camel is too tired, and don't"
+      "let the native americans catch up!")
+print("- If you decide you're done, then choose 'Q' and you'll leave the game")
+print("- Also, there is a chance you could find a sanctuary/oasis that will be very helpful."
+      " I doubt you can do find one, since they are very rare.")
 done = False
 oasis = False
 milesTraveled = 0
